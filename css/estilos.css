@@ -12,9 +12,10 @@ html{
     width: 135px;
 }
 .container{
-    max-width: auto;/*1250*/
-    /*margin: 0px auto;*/
-    margin: 0px 75px 0px 75px;
+    max-width: 1250;
+    margin: 0px auto;
+    /*margin: 0px 75px 0px 75px;*/
+    padding: 0 4%;
 }
 .flex{
     display: flex;
@@ -308,6 +309,55 @@ section.feedback {
     background-color: #fff;
     color: black;
 }
+/*ENTRE EM CONTATO*/
+section.contato-forms{
+    background-color: #fff;
+    padding: 80px 0;
+}
+.txt-contato, .icons-contato{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+.contato-forms .txt-contato h3{
+    font-size: 2.3em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.contato-forms .txt-contato h3 span{
+    display: block;
+    font-weight: 800;
+}
+.contato-forms .icons-contato a{
+    text-decoration: none;
+}
+.contato-forms .icons-contato button{
+    display: flex;
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contato-forms .icons-contato button i{
+    font-size: 1.5em;
+}
+.contato-forms .icons-contato button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+
 /*rodapé site*/
 footer{
     background-color: black;
@@ -344,13 +394,4 @@ footer .final-footer{
 footer .final-footer p{
     color: #fff;
     margin-top: 10px;
-}
-@media screen and (max-width: 500px) {
-    .form .column {
-        flex-wrap: wrap;
-    }
-
-    .form :where(.gender-option, .gender) {
-        row-gap: 15px;
-    }
 }
