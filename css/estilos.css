@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 135px;
+}
+.container{
+    max-width: auto;/*1250*/
+    /*margin: 0px auto;*/
+    margin: 0px 75px 0px 75px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header {
+    width: 100%;
+    padding: 50px 4px;
+    top: 0;
+    position: fixed;
+    left: 0;
+    transition: 0.5s;
+    z-index: 10;
+}
+header.rolagem{
+    background-color: #dcdcdc;
+    padding: 20px 4px;
+}
+header ul{
+    list-style-type: none;
+}
+header ul li{
+    display: inline-block;
+    margin: 0px 40px;
+    font-weight: bold;
+}
+header ul li a{
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+    display: block;
+    position: relative;
+    padding: 5px;
+}
+header ul:hover li a{
+    opacity: 0.3;
+}
+header ul li a:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    color: white;
+}
+header ul li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    z-index: -1;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+header ul li a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: 0.3s;
+}
+/*Banner e escrita*/
+.Banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/Banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+}
+.Banner .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: rgb(102, 2, 2);
+    text-align: left;
+    margin: 0px 150px
+}
+.Banner .txt-banner h1{
+    font-size: 5em;
+    
+}
+.Banner .txt-banner p{
+    font-size: 25px;
+    font-weight: 300;
+    font-weight:bold ;
+}
+.Banner .txt-banner p span{
+    display: block;
+    margin: 5px 0;
+    
+}
+.botao_banner{
+    margin: 7px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 1.0em;
+    font-weight: bold;
+    background-color: red;
+    padding: 10px 35px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+/*Botao de contato*/
+.btn-contato{
+    position: relative;
+    font-size: 12px;
+    padding: 10px 30px;
+    border: 0.5px solid black;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.10);
+    transition: all 0.5s ease;
+}
+.btn-contato a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.btn-contato::after{
+    background: rgb(233, 1, 1);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+.btn-contato:hover a{
+    color: white;
+    font-weight: 450;
+}
+.btn-contato:hover::after{
+    width: 100%;
+}
+
+/*estilo d nossa historia e dos diferenciais*/
+.interface{
+    max-width: auto;
+    margin: 0px 75px 0px 75px;
+    /*margin: 0px auto;*/
+    scroll-margin-top: 100px;
+}
+section.vantagens{
+    padding: 40px 0;
+    background-color: #eeebeb;
+}
+.vantagens .itens-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3%;
+}
+.vantagens .itens-container .img-itens img{
+    max-width: 350px;
+}
+.vantagens .itens-container .txt-itens h3{
+    font-size: 3em;
+}
+.itens-container .txt-itens h3 span{
+    font-weight: 200;
+}
+/* cards do site */
+.cards-container {
+    display: flex;
+    height: 480px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0px; /* espaço entre os cards */
+  }
+.container1 {
+    top: 35px;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 5px 7px rgba(0,0,0,0.9);
+    transition: 0.5s;
+    margin: 0px 20px 0px 20px;
+    flex-wrap: wrap;
+}
+.conteiner1:hover{
+    height: 450px;
+}
+.container1 .img-card{
+    position: absolute;
+    width: 270px;
+    height: auto;
+    top: -10px;
+    transition: 0.5s;
+    
+}
+.container1:hover .img-card{
+    top: -100px;
+    scale: 0.75;
+}
+
+.container1 .img-card img{
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.container1 .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 320px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.container1 .content p{
+    padding: 10px;
+}
+.container1:hover .content{
+    top: 200px;
+    height: 200px;
+}
+/*estilização do feedback*/
+section.feedback {
+    height: 500px;
+    background-image: url(../img/feedback.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    background-attachment: fixed;
+}
+.feedback > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.856);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.feedback > .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+.feedback h3{
+    font-size: 3em;
+    
+    font-weight: 200;
+}
+.feedback h3 span{
+    display: block;
+    font-weight: 600;
+}
+.feedback p{
+    
+    font-size: 20px;
+    font-weight: 300;
+}
+.feedback button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: .5s;
+    color: #fff;
+    width: 220px;
+    height: 60px;
+}
+.feedback button:hover{
+    background-color: #fff;
+    color: black;
+}
+/*rodapé site*/
+footer{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+footer .top-footer button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .5s;
+}
+footer .top-footer button:hover{
+    background-color: #fff;
+    color: black;
+
+}
+footer .meio-footer{
+    margin: 20px;
+}
+footer .meio-footer a{
+    color: #fff;
+}
+footer .final-footer{
+    border-top: 2px solid #fff;
+}
+footer .final-footer p{
+    color: #fff;
+    margin-top: 10px;
+}
+@media screen and (max-width: 500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+
+    .form :where(.gender-option, .gender) {
+        row-gap: 15px;
+    }
+}
