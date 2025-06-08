@@ -9,14 +9,12 @@
 
 body {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-    background-image: url(../img/fundo.png);
+    background-color: #eeeeee;
     background-repeat: no-repeat;
     background-size: cover;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 html{
     height: 100vh;
@@ -91,6 +89,7 @@ header ul li a:hover::before{
     transition: 0.3s;
 }
 .container {
+    margin: 170px auto 60px auto;
     margin-top: 170px;
     position: relative;
     max-width: 700px;
@@ -101,7 +100,11 @@ header ul li a:hover::before{
     border: 0.5px solid black;
     box-shadow: 0 0 15px rgb(0, 0, 0, 1);
 }
-
+.container2{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 /*Botao de contato*/
 .btn-contato{
     position: relative;
@@ -259,6 +262,43 @@ textarea {
     border: 1px solid #ddd;
     color: #707070;
     font-family: "Poppins", sans-serif;
+}
+/*rodapé site*/
+footer{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+footer .top-footer button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .5s;
+}
+footer .top-footer button:hover{
+    background-color: #fff;
+    color: black;
+
+}
+footer .meio-footer{
+    margin: 20px;
+}
+footer .meio-footer a{
+    color: #fff;
+}
+footer .final-footer{
+    border-top: 2px solid #fff;
+}
+footer .final-footer p{
+    color: #fff;
+    margin-top: 10px;
 }
 
 
