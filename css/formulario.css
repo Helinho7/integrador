@@ -86,7 +86,7 @@ header ul li a::before{
 header ul li a:hover::before{
     transform-origin: left;
     transform: scaleX(1);
-    transition: 0.3s;
+    transition: 0.7s;
 }
 .container {
     margin: 170px auto 60px auto;
