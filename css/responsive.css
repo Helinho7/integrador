@@ -1,10 +1,133 @@
-@media screen and (max-width: 1032px) {
-    header .menu{
-        display: none;
+/* responsive.css */
+
+@media screen and (max-width: 1024px) {
+    .Banner .txt-banner h1 {
+        font-size: 3em;
+    }
+    .container1 {
+        width: 90%;
+        height: auto;
+        margin-bottom: 30px;
+        position: static;
+    }
+    .container1 .img-card {
+        position: relative;
+        top: 0;
+        scale: 1;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .container1 .content {
+        position: relative;
+        top: 0;
+        height: auto;
+        padding: 20px;
+    }
+    .cards-container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .vantagens .itens-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .vantagens .itens-container .img-itens img {
+        max-width: 100%;
+        height: auto;
+    }
+    .interface {
+        margin: 0 20px;
     }
 }
-@media screen and (max-width: 1032px) {
-    header .menu{
+
+@media screen and (max-width: 768px) {
+    header .flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header nav,
+    header ul li:nth-child(1),
+    header ul li:nth-child(2),
+    header ul li:nth-child(3) {
         display: none;
+    }
+    .btn-contato {
+        margin: 0;
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    .Banner {
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        justify-content: center;
+    }
+    .Banner .container {
+        margin: 0;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .Banner .txt-banner {
+        align-items: center;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .Banner .txt-banner h1 {
+        font-size: 2em;
+    }
+    .Banner .txt-banner p {
+        font-size: 1em;
+    }
+    .botao_banner {
+        font-size: 0.9em;
+        padding: 10px 20px;
+        margin-top: 15px;
+    }
+    .contato-forms .txt-contato,
+    .contato-forms .icons-contato {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .contato-forms .icons-contato button {
+        width: 80%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Banner .txt-banner h1 {
+        font-size: 1.7em;
+    }
+    .botao_banner {
+        font-size: 0.8em;
+        padding: 8px 16px;
+    }
+    .feedback h3 {
+        font-size: 2em;
+    }
+    .feedback p {
+        font-size: 16px;
+    }
+    footer .top-footer button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .vantagens .itens-container {
+        gap: 40px;
+    }
+    .txt-contato h3 {
+        font-size: 1.5em;
+        line-height: 1.4em;
+    }
+    .feedback button {
+        width: 80%;
     }
 }
