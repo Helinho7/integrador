@@ -15,7 +15,7 @@
     <title>BiblioConecta</title>
 </head>
 <body>
-    <header id="header">
+        <header id="header">
             <div class="container1">
 
                 <div class="flex">
@@ -30,7 +30,7 @@
                         </ul>
                     </nav>
                         <div class="btn-contato">
-                        <a href="#">CONTATO</a>
+                        <a href="index.html #contatos">CONTATO</a>
 
                         </div>
                 </div><!--fim flex-->
@@ -40,12 +40,18 @@
 
         <script src="menu.js"></script>
 
-    <section class="container">
-        <form action="#" class="form">
+    <div id="formRetorno" class="divRetorno">
+        <p id="textoRetorno" class="texto-contatos"></p>
+    </div>
+    <div id="formulario" class="container">
+        <ul class="titulo_sobrenos">
+                    <li class="titulo_principal">📋 Formulário 📋</li>
+            </ul>
+        <form action="#" class="form" id="frmContato">
             <!--Box do Nome-->
             <div class="input-box">
                 <label>Nome Completo</label>
-                <input type="text" placeholder="Digite seu nome completo" required>
+                <input type="text" id="nomeCompleto" placeholder="Digite seu nome completo" required>
             </div>
             <!--Box do E-mail-->
             <div class="input-box">
@@ -101,8 +107,7 @@
                                 <option>Problemas com Login</option>
                                 <option>Sugestão de Livro</option>
                                 <option>Dificuldade de Acesso ao Acervo Digital</option>
-                                <option>Reclamação</option>
-                                <option>Outros</option>
+                                <option>Outros (descrever)</option>
                             </select>
                         </div>
                     </div>
@@ -119,9 +124,8 @@
                                 <option>Eventos e Oficinas</option>
                                 <option>Apoio à Pesquisa</option>
                                 <option>Sugestão de Livro</option>
-                                <option>Serviços Digitais (e-books, bases de dados)</option>
-                                <option>Acessibilidade</option>
-                                <option>Sugestões e Melhorias</option>
+                                <option>Serviços Digitais (e-books, bases de dados)
+                                <option>Outros (descrever)</option>
                             </select>
                         </div>
                     </div>
@@ -133,9 +137,10 @@
                 </div>
             </div>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" id="enviar">Enviar</button>
         </form>
-    </section>
+    </div>
+    <script src="forms.js"></script>
     <footer>
                 <div class="container2">
                     <section class="top-footer">

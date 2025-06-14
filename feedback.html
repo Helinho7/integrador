@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/feedback.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+    <title>BiblioConecta</title>
+</head>
+<body>
+        <header id="header">
+            <div class="container1">
+
+                <div class="flex">
+                    <a href="index.html"><img src="img/LOGO.png" class="logo"></i></a>
+
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="index.html #itens-container">QUEM SOMOS</a></li>
+                            <li><a href="#">ACERVO</a></li>
+                            <li><a href="#">LOGIN</a></li>
+                        </ul>
+                    </nav>
+                        <div class="btn-contato">
+                        <a href="index.html #contatos">CONTATO</a>
+
+                        </div>
+                </div><!--fim flex-->
+
+            </div><!--fim container-->
+        </header>
+
+        <script src="menu.js"></script>
+
+    <div id="formRetorno" class="divRetorno">
+        <p id="textoRetorno" class="texto-contatos"></p>
+    </div>
+    <div id="formulario" class="container">
+        <ul class="titulo_sobrenos">
+                    <li class="titulo_principal">Feedback</li>
+            </ul>
+        <div class="avaliacao-box">
+            <div class="titulo-avaliacao">Avaliação</div>
+        <ul class="avaliacao">
+            <li class="star-icon ativo" data-avaliacao="1"></li>
+            <li class="star-icon" data-avaliacao="2"></li>
+            <li class="star-icon" data-avaliacao="3"></li>
+            <li class="star-icon" data-avaliacao="4"></li>
+            <li class="star-icon" data-avaliacao="5"></li>
+
+        </ul>
+        </div>
+        <form action="#" class="form" id="frmContato">
+            <!--Box do Nome-->
+            <div class="input-box">
+                <label>Número de Protocolo</label>
+                <input type="text" id="nomeCompleto" placeholder="Digite aqui o numero do seu Protocolo" required>
+                <span class="tooltip">O número do protocolo é disponibilizado<br>no momento da solicitação do atendimento.</span>
+            </div>
+            <!--Box do E-mail-->
+
+                <div class="input-box descricao">
+                    <label>Descrição</label>
+                    <textarea placeholder="Descreva detalhadamente o seu Feedback" required></textarea>
+                </div>
+
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+    </div>
+    <script src="feedback.js"></script>
+    <footer>
+                <div class="container2">
+                    <section class="top-footer">
+
+                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="#"><button><i class="bi bi-envelope"></i></button></a>
+                        <a href="formulario.html"><button><i class="bi bi-clipboard2-check" title="Formulario"></i></button></a>
+
+                    </section>
+                    <section class="meio-footer">
+                        <a href="#">Contato</a>
+                    </section>
+                    <section class="final-footer">
+                        <p>biblioconecta@gmail.com</p>
+                    </section>
+                </div>
+            </footer>
+</body>
+</html>

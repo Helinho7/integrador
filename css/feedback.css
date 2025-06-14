@@ -147,18 +147,18 @@ header ul li a:hover::before{
     margin-top: 15px;
     margin-bottom: 35px;
 }
-/*.titulo_principal::after{
-    content: "\270E";
+.titulo_principal::after{
+    content: "\2605";
     margin-left: 10px;
     color:#ffe500;
     font-weight: bold;
 }
 .titulo_principal::before{
-    content: "\270E";
+    content: "\2605";
     margin-right: 10px;
     color:#ffe500;
     font-weight: bold;
-}*/
+}
 
 
 .titulo_sobrenos li {
@@ -303,9 +303,90 @@ textarea {
 }
 
 #textoRetorno {
+    padding: 10px;
     font-size: 1.2rem;
     color: black;
     font-weight: bold;
+    line-height: 1.6;  /* <-- AQUI aumenta o espaço entre as linhas */
+}
+/*informação do campo do protocolo*/
+.input-box {
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.input-box:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+/*estilização estrelas avaliacao*/
+.avaliacao-box {
+    position: relative;
+    border: 2px solid black;
+    padding: 20px 10px 10px 10px;
+    border-radius: 10px;
+    margin: 10px auto;  /* <-- Isso centraliza */
+    text-align: center;
+    background-color: #fff;
+    max-width: 290px;    /* <-- Isso limita a largura */
+    width: 100%;         /* Faz com que em telas menores ele continue responsivo */
+}
+.titulo-avaliacao {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffc107; /* Fundo amarelo do título */
+    color: black;
+    padding: 2px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.avaliacao{
+    display: flex;
+    justify-content: center; /* <-- Centraliza as estrelas no bloco */
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 2px; /* Opcional: dá um espacinho abaixo */
+    margin-top: -20px;
+}
+.star-icon{
+    list-style: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color:#ffe500;
+}
+.star-icon::before{
+    content: "\2605";
+}
+.star-icon.ativo ~ .star-icon::before{
+    content: "\2606";
+}
+.avaliacao:hover .star-icon::before{
+    content: "\2605";
+}
+.star-icon:hover ~ .star-icon::before{
+    content: "\2606";
 }
 
 /*rodapé site*/

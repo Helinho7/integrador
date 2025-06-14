@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
         <title>Biblioconecta</title>
+
     </head>
     <body>
         <header id="header">
@@ -47,7 +48,7 @@
 
                     </p>
                 
-                <a href="#"><button class="botao_banner">Solicite Aqui</button></a>
+                <a href="formulario.html"><button class="botao_banner">Solicite Aqui</button></a>
                 </div>
             </div>
 
@@ -120,7 +121,7 @@
             <div class="container">
                 <h3>Feedback? <span>A sua opinião move a gente.</span></h3>
                 <p>Nos diga o que achou e nos ajude a melhorar sempre para você!</p>
-                <a href="#">
+                <a href="feedback.html">
                     <button>Enviar Feedback</button>
                 </a>
             </div>
@@ -145,10 +146,10 @@
                         <a href="#">
                             <button><i class="bi bi-whatsapp"></i><p>Chamar no  whatsapp</p></button>
                         </a>
-                        <a href="#">
+                        <a href="javascript:void(0);" onclick="abrirPopup1()">
                             <button><i class="bi bi-envelope"></i><p>Encaminhar E-mail</p></button>
                         </a>
-                        <a href="#">
+                        <a href="javascript:void(0);" onclick="abrirPopup()">
                             <button><i class="bi bi-telephone"></i><p>Telefone</p></button>
                         </a>
                         <a href="formulario.html">
@@ -158,7 +159,26 @@
                 </div>
 
             </section>
-            
+                   <!-- Pop-up de telefone -->
+                    <div id="popupTelefone" class="popup-container">
+                        <div class="popup">
+                            <p>📞 Deseja ligar para (11) 91411-7031?</p>
+                                <div class="popup-botoes">
+                            <a href="tel:+551191411-7031" class="popup-ligar">Ligar</a>
+                        <button onclick="fecharPopup()">Cancelar</button>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="popupEmail" class="popup-container">
+                        <div class="popup">
+                            <p>✉️ Nosso E-mail: biblioconecta@gmail.com</p>
+                                <div class="popup-botoes">
+                        <button onclick="fecharPopup1()">Voltar</button>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
             <footer>
                 <div class="container">
                     <section class="top-footer">
